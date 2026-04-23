@@ -175,7 +175,6 @@ footer,
   background-color: var(--color-page-bg) !important;
 }
 
-.copy-right.text-gray-200,
 .bg-red-500,
 .bg-white h2 {
     color: #000000 !important;
@@ -203,6 +202,10 @@ a.btn-primary-action {
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 8px !important;
+}
+
+.copy-right {
+  padding-bottom: 1rem !important;
 }
 
 /* ----------------------------------------------------------------
