@@ -2,7 +2,6 @@
 <header class="bg-blue-900 text-white p-4">
     <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-3xl font-semibold">
-<<<<<<< HEAD
             <a href="/" class="flex items-center gap-2">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#CFD8DC" stroke-linecap="round" stroke-linejoin="round" />
@@ -17,9 +16,6 @@
                 </svg>
                 <span>JobSeek</span>
             </a>
-=======
-            <a href="/">JobSeek</a>
->>>>>>> 0adf85a3109ce4ba75e08aae9c78e2228a5030d5
         </h1>
         <nav class="space-x-4">
             <a href="login.html" class="text-white hover:underline">Login</a>

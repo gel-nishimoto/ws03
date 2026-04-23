@@ -1,7 +1,6 @@
 <footer class="bg-blue-900 text-white mt-20">
     <div class="container mx-auto px-4 py-6">
         <div class="flex justify-between items-center">
-<<<<<<< HEAD
             <div class="flex items-center gap-3">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#CFD8DC" stroke-linecap="round" stroke-linejoin="round" />
@@ -20,27 +19,15 @@
                 </div>
             </div>
             <div class="space-x-4 text-xs text-gray-200">
-=======
-            <div>
-                <h3 class="text-xl font-bold">Jobseek</h3>
-                <p class="text-gray-200 text-xs mt-2">Find your dream job today.</p>
-            </div>
-            <div class="flex space-x-4 text-xs text-gray-200">
->>>>>>> 0adf85a3109ce4ba75e08aae9c78e2228a5030d5
                 <a href="/" class="hover:underline">Home</a>
                 <a href="/listings" class="hover:underline">Jobs</a>
                 <a href="/listings/create" class="hover:underline">Post a Job</a>
             </div>
         </div>
-<<<<<<< HEAD
     </div>
     <div class="copy-right">
         <hr class="border-blue-800 my-4 w-full">
         <p class="text-xs text-black text-center">
-=======
-        <hr class="border-blue-800 my-4">
-        <p class="text-center text-xs text-gray-200">
->>>>>>> 0adf85a3109ce4ba75e08aae9c78e2228a5030d5
             &copy; <?= date('Y'); ?> Jobseek. All rights reserved.
         </p>
     </div>
