@@ -169,8 +169,8 @@
                 </div>
             </div>
         </div>
-        <a href="listings" class="block text-xl text-center">
-            <i class="fa fa-arrow-alt-circle-right"></i>
+        <a href="listings" class="btn-primary-action block text-xl text-center px-8 py-4 rounded shadow-md">
+            <i class="fa fa-arrow-alt-circle-right mr-2"></i>
             Show All Jobs
         </a>
 </section>
