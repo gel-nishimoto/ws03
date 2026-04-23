@@ -12,11 +12,7 @@
    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 */
 
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-=======
-
->>>>>>> 0adf85a3109ce4ba75e08aae9c78e2228a5030d5
 
 
 /* ----------------------------------------------------------------
@@ -59,13 +55,10 @@
    ---------------------------------------------------------------- */
 
 
-<<<<<<< HEAD
   :root {
     --font-heading: 'Inter', sans-serif;  /* Font para sa mga title at heading */
     --font-body: 'Open Sans', sans-serif;     /* Font para sa regular na text */
   }
-=======
->>>>>>> 0adf85a3109ce4ba75e08aae9c78e2228a5030d5
 
 
 /* ----------------------------------------------------------------
@@ -187,15 +180,11 @@ footer,
     color: #000000 !important;
 }
 
-<<<<<<< HEAD
 .copy-right,
-=======
->>>>>>> 0adf85a3109ce4ba75e08aae9c78e2228a5030d5
 .bg-white a.block {
     background-color: #CFD8DC !important;
 }
 
-<<<<<<< HEAD
 .h2-style {
     font-size: 3.5rem !important;      /* Massive size like a hero H1 */
     font-weight: 900 !important;
@@ -219,8 +208,6 @@ a.btn-primary-action {
   padding-bottom: 1rem !important;
 }
 
-=======
->>>>>>> 0adf85a3109ce4ba75e08aae9c78e2228a5030d5
 /* ----------------------------------------------------------------
    ADVANCED ZONE — Para sa gustong mag-explore pa!
    ----------------------------------------------------------------
