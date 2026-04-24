@@ -87,13 +87,13 @@ class Router
 
     public function route($uri, $method)
     {
-        foreach ($this->routes as $routes) {
-            if ($routes['uri'] === $uri && $routes['method'] === $method) {
-                require basePath($routes['controller']);
+        foreach ($this->routes as $route) {
+            if ($route['uri'] === $uri && $route['method'] === $method) {
+                require basePath($route['controller']);
                 return;
             }
         }
-        
+        $this->error();
     }
     
 }
