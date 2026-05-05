@@ -50,3 +50,14 @@ function loadPartial($name)
         echo "Partial '{$name}' not found.";
     }
 }
+
+/**
+ * 
+ * 
+ * 
+ * 
+ */
+
+function formatSalary($salary) {
+    return '$' .  number_format(floatval($salary));
+}

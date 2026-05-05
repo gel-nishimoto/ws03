@@ -14,11 +14,10 @@
                 <div class="p-4">
                     <h2 class="text-xl font-semibold"><?= $listing->title ?></h2>
                     <p class="text-gray-700 text-lg mt-2">
-                        We are seeking a skilled software engineer to develop
-                        high-quality software solutions.
+                        <?= $listing->description ?>
                     </p>
                     <ul class="my-4 bg-gray-100 p-4 rounded">
-                        <li class="mb-2"><strong>Salary:</strong> $80,000</li>
+                        <li class="mb-2"><strong>Salary:</strong><?= formatSalary($listing->salary) ?></li>
                         <li class="mb-2">
                             <strong>Location:</strong> New York
                             <span
@@ -35,6 +34,7 @@
                     </a>
                 </div>
             </div>
+            <?php endforeach; ?>
         </div>
         <a href="listings" class="btn-primary-action block text-xl text-center px-8 py-4 rounded shadow-md">
             <i class="fa fa-arrow-alt-circle-right mr-2"></i>
