@@ -180,9 +180,18 @@ footer,
     color: #000000 !important;
 }
 
-.copy-right,
-.bg-white a.block {
+.copy-right {
     background-color: #CFD8DC !important;
+    padding-bottom: 1rem !important;
+}
+
+.bg-white a.block.back-to-listings {
+    background-color: transparent !important;
+    color: var(--color-header) !important;
+}
+
+.text-primary-brand {
+    color: var(--color-header) !important;
 }
 
 .h2-style {

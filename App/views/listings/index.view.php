@@ -1,7 +1,6 @@
-<?= loadPartial('head'); ?>
-<?= loadPartial('navbar'); ?>
-<?= loadPartial('showcase-search'); ?>
-<?= loadPartial('top-banner'); ?>
+<?= loadPartial('head') ?>
+<?= loadPartial('navbar') ?>
+<?= loadPartial('top-banner') ?>
 
 <!-- Job Listings -->
 <section>
@@ -17,7 +16,7 @@
                         <?= $listing->description ?>
                     </p>
                     <ul class="my-4 bg-gray-100 p-4 rounded">
-                        <li class="mb-2"><strong>Salary:</strong><?= formatSalary($listing->salary) ?></li>
+                        <li class="mb-2"><strong>Salary: </strong><?= formatSalary($listing->salary) ?></li>
                         <li class="mb-2">
                             <strong>Location:</strong><?= $listing->city ?>, <?= $listing->state ?>
                             <span
@@ -35,11 +34,7 @@
             </div>
             <?php endforeach; ?>
         </div>
-        <a href="listings" class="btn-primary-action block text-xl text-center px-8 py-4 rounded shadow-md">
-            <i class="fa fa-arrow-alt-circle-right mr-2"></i>
-            Show All Jobs
-        </a>
 </section>
 
-<?= loadPartial('bottom-banner'); ?>
-<?= loadPartial('footer'); ?>
+<?= loadPartial('bottom-banner') ?>
+<?= loadPartial('footer') ?>
