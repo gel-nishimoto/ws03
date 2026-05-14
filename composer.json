@@ -1,0 +1,16 @@
+{
+    "name": "gel-nishimoto/ws03",
+    "description": "Job seeker application",
+    "authors" : [
+        {
+            "name": "Angel Nishimoto",
+            "email": "angelpn0213@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "Framework/",
+            "App\\": "App/"
+        }
+    }
+}
