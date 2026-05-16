@@ -52,10 +52,21 @@ class ListingController
      * 
      * @return void
      */
-    public function store() 
+    public function store()
     {
         $allowedFields = [
-            'title', 'description', 'salary', 'tags', 'company', 'address', 'city', 'state', 'phone', 'email', 'requirements', 'benefits'
+            'title',
+            'description',
+            'salary',
+            'tags',
+            'company',
+            'address',
+            'city',
+            'state',
+            'phone',
+            'email',
+            'requirements',
+            'benefits'
         ];
 
         $newListingData = array_intersect_key($_POST, array_flip($allowedFields));
@@ -65,7 +76,12 @@ class ListingController
         $newListingData = array_map('sanitize', $newListingData);
 
         $requiredFields = [
-            'title', 'description', 'email', 'city', 'state'
+            'title',
+            'description',
+            'salary',
+            'email',
+            'city',
+            'state'
         ];
 
         $errors = [];
@@ -76,7 +92,7 @@ class ListingController
             }
         }
 
-        if(!empty($errors)) {
+        if (!empty($errors)) {
             // Reload view with errors
             loadView('listings/create', [
                 'errors' => $errors,
@@ -84,7 +100,62 @@ class ListingController
             ]);
         } else {
             // Submit Data
-            echo 'Success';
+            // $this->db->query('INSERT INTO listings(title, description, salary, tags, company, address, city, state, phone, email, requirements, benefits, user_id) VALUES (:title, :description, :salary, :tags, :company, :address, :city, :state, :phone, :email, :requirements, :benefits, :user_id)', $newListingData);
+
+            $fields = [];
+
+            foreach ($newListingData as $field => $value) {
+                $fields[] = $field;
+            }
+
+            $fields = implode(', ', $fields);
+
+            $value = [];
+
+            foreach ($newListingData as $field => $value) {
+                // Convert empty strings to null
+                if ($value === '') {
+                    $newListingData[$field] = null;
+                }
+                $values[] = ':' . $field;
+            }
+            $values = implode(', ', $values);
+
+            $query = "INSERT INTO listings ({$fields}) VALUES ({$values})";
+
+            $this->db->query($query, $newListingData);
+
+            redirect('/listings');
         }
     }
+
+    /**
+     * Delete a listing
+     * 
+     * @param array $params
+     * @return void
+     */
+    public function destroy($params) {
+        $id = $params['id'];
+
+        $params = [
+            'id' => $id
+        ];
+
+        $listing = $this->db->query('SELECT * FROM listings WHERE id = :id', $params)->fetch();
+
+        if(!$listing) {
+            ErrorController::notFound('LIsting not found');
+            return;
+        }
+
+        $this->db->query('DELETE FROM listings WHERE id = :id', $params);
+
+        //Set flash message
+        $_SESSION['success_message'] = 'Listing deleted successfully';
+
+        redirect('/listings');
+    }
+
+
 }
