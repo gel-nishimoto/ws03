@@ -51,13 +51,18 @@ function loadPartial($name)
     }
 }
 
+function formatSalary($salary) {
+    return '$' .  number_format(floatval($salary));
+}
+
 /**
+ * Sanitize Data
  * 
- * 
- * 
+ * @param string $dirty
+ * @return string
  * 
  */
 
-function formatSalary($salary) {
-    return '$' .  number_format(floatval($salary));
+function sanitize($dirty) {
+    return filter_var(trim($dirty), FILTER_SANITIZE_SPECIAL_CHARS);
 }
