@@ -11,15 +11,23 @@
                 Back To Listings
             </a>
             <?php if (Framework\Authorization::isOwner($listing->user_id)) : ?>
-            <div class="flex space-x-4 ml-4">
-                <a href="/listings/edit/<?= $listing->id ?>" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">Edit</a>
-                <!-- Delete Form -->
-                <form method="POST">
-                    <input type="hidden" name="_method" value="DELETE">
-                    <button type="submit" class="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded">Delete</button>
-                </form>
-                <!-- End Delete Form -->
-            </div>
+                <div class="flex items-center space-x-4 ml-4">
+                    <!-- Edit Button -->
+                    <a href="/listings/edit/<?= $listing->id ?>" class="flex items-center gap-2 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
+                        <i class="fa-solid fa-pencil text-xs"></i>
+                        <span>Edit</span>
+                    </a>
+
+                    <!-- Delete Form -->
+                    <form method="POST" action="/listings/<?= $listing->id ?>" class="inline-block m-0">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="flex items-center gap-2 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded button-style-text">
+                            <i class="fa-solid fa-trash-can text-xs"></i>
+                            <span>Delete</span>
+                        </button>
+                    </form>
+                    <!-- End Delete Form -->
+                </div>
             <?php endif; ?>
         </div>
         <div class="p-4">
@@ -63,6 +71,7 @@
     <a
         href="mailto: <?= $listing->email ?>"
         class="block w-full text-center px-5 py-2.5 shadow-sm rounded border text-base font-medium cursor-pointer text-indigo-700 bg-indigo-100 hover:bg-indigo-200">
+        <i class="fa-solid fa-paper-plane"></i>
         Apply Now
     </a>
 </section>

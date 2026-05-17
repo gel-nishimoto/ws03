@@ -56,12 +56,6 @@
   --card-shadow:   0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-
-/* ================================================================
-   === HUWAG I-EDIT ANG SECTION NA ITO (unless gusto mong advanced!) ===
-   === Ito ang code na gumagamit ng iyong mga variables sa itaas.  ===
-   ================================================================ */
-
 body {
   font-family: var(--font-body) !important;
   background-color: var(--color-page-bg) !important;
@@ -167,7 +161,7 @@ footer,
 }
 
 .h2-style {
-    font-size: 3.5rem !important;      /* Massive size like a hero H1 */
+    font-size: 3.5rem !important; 
     font-weight: 900 !important;
 }
 
@@ -177,7 +171,7 @@ footer,
 
 a.btn-primary-action {
     background-color: var(--color-header) !important;
-    color: #FFFFFF !important; /* Force text to white */
+    color: #FFFFFF !important; 
     display: block !important;
     width: fit-content !important;
     margin-left: auto !important;
@@ -193,24 +187,6 @@ a.reg-color {
   color: var(--color-header) !important;
 }
 
-/* ----------------------------------------------------------------
-   ADVANCED ZONE — Para sa gustong mag-explore pa!
-   ----------------------------------------------------------------
-   Alisin ang /* at */ para i-activate ang isang rule.
-   /* ---------------------------------------------------------------- */
-
-/* Hover effect sa mga link */
-/* a:hover {
-  text-decoration: underline;
-  opacity: 0.85;
-} */
-
-/* Kulay ng input fields */
-/* input, select, textarea {
-  border-color: var(--color-link) !important;
-  border-radius: var(--border-radius) !important;
-} */
-
-/* Kulay ng success badge */
-/* .bg-green-100 { background-color: #d1fae5 !important; }
-   .text-green-800 { color: #065f46 !important; } */
+.button-style-text {
+  color: #FFFFFF !important;
+}
