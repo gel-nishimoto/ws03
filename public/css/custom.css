@@ -17,11 +17,7 @@
 
 /* ----------------------------------------------------------------
    SECTION 1: MGA KULAY (Colors)
-   ----------------------------------------------------------------
-   Palitan ang bawat hex code ng kulay na gusto mo.
-   Tip: https://coolors.co — para pumili ng color palette
-        https://htmlcolorcodes.com — para makita ang hex codes
-   ---------------------------------------------------------------- */
+   ----------------------------------------------------------------*/
 
 :root {
   --color-header:       #455A64;   /* Header at navigation bar */
@@ -42,17 +38,7 @@
 
 /* ----------------------------------------------------------------
    SECTION 2: MGA FONT (Typography)
-   ----------------------------------------------------------------
-   Palitan ng font name na gusto mo.
-   Kung gagamit ng Google Font, i-import muna sa taas ng file.
-
-   Halimbawa ng built-in fonts (hindi na kailangan ng import):
-     'Georgia', serif
-     'Arial', sans-serif
-     'Verdana', sans-serif
-     'Times New Roman', serif
-     'Courier New', monospace
-   ---------------------------------------------------------------- */
+   ----------------------------------------------------------------*/
 
 
   :root {
@@ -63,26 +49,12 @@
 
 /* ----------------------------------------------------------------
    SECTION 3: HUGIS AT ESTILO (Shape & Style)
-   ----------------------------------------------------------------
-   --border-radius:
-     0px      = matuwid / sharp corners
-     4px      = konting rounding
-     8px      = medyo rounded
-     16px     = malakas na rounding
-     9999px   = pill shape / fully round
-
-   --card-shadow:
-     none                           = walang shadow
-     0 2px 8px rgba(0,0,0,0.08)    = mahinang shadow
-     0 4px 16px rgba(0,0,0,0.20)   = malakas na shadow
    ---------------------------------------------------------------- */
 
 :root {
   --border-radius: 8px;
   --card-shadow:   0 2px 8px rgba(0, 0, 0, 0.08);
 }
-
-
 
 
 /* ================================================================
@@ -215,6 +187,10 @@ a.btn-primary-action {
 
 .copy-right {
   padding-bottom: 1rem !important;
+}
+
+a.reg-color {
+  color: var(--color-header) !important;
 }
 
 /* ----------------------------------------------------------------
